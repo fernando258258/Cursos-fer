@@ -1,18 +1,10 @@
-// const newMessage = {
-//   message: "Hola Mundo",
-//   tittle: "Fernando",
-// };
-
-const getResult = (a, b) => {
-  return a + b;
-};
-
-export const FirstApp = () => {
+export const FirstApp = ({ title, subTitle }) => {
+  // console.log(props);
   return (
     <>
-      <h1>{getResult(2, 2)}</h1>
+      <h1>{title}</h1>
       {/* <code>{JSON.stringify(newMessage)}</code> */}
-      <p>Soy un subtitulo</p>
+      <p>{subTitle}</p>
     </>
   );
 };
