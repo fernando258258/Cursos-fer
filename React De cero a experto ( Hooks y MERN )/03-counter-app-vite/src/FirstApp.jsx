@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const FirstApp = ({ title, subTitle }) => {
   // console.log(props);
   return (
@@ -9,4 +11,7 @@ export const FirstApp = ({ title, subTitle }) => {
   );
 };
 
-//Nota: se agrega JSON.stringfy por que no se puede llamar directamente al objeto
+FirstApp.propTypes = {
+  tittle: PropTypes.string.isRequired,
+  subTitletittle: PropTypes.string.isRequired,
+};
